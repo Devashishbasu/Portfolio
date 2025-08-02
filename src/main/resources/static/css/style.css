@@ -1,0 +1,96 @@
+:root {
+
+  --primary-color: #6366f1;
+  --secondary-color: #a855f7;
+  --accent-color: #ec4899;
+  --dark-color: #0a0a16;
+  --darker-color: #050510;
+  --light-color: #f8fafc;
+  --text-color: #e2e8f0;
+  --text-light: #94a3b8;
+  --success-color: #10b981;
+
+}
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+
+::selection {
+  background: var(--accent-color);
+  color: var(--light-color);
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    background: var(--darker-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+     font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.loader-wrapper{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: var(--darker-color);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     z-index: 9999;
+}
+
+.loader {
+   position: relative;
+   width: 200px;
+   height: 200px;
+}
+
+.loader-text {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 1.5rem;
+     font-weight: 700;
+     color: var(--light-color);
+     z-index: 2;
+}
+
+.loader-circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top-color: var(--primary-color);
+    animation: spin 1.5s linear infinite;
+
+}
+
+.loader-circle:nth-child(2) {
+     border-top-color: var(--secondary-color);
+     animation-duration: 2s;
+}
+
+.loader-circle:nth-child(3) {
+     border-top-color: var(--accent-color);
+     animation-duration: 2.5s;
+}
