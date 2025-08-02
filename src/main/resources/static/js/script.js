@@ -7,4 +7,4 @@ window.addEventListener('load', ()=> {
            document.querySelector('.loader-wrapper').style.opacity = 'none';
        }, 500);
     }, 2000);
-})
+});
