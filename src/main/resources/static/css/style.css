@@ -290,6 +290,7 @@ a {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    white-space: nowrap;
 }
 
 .hero-subtitle {
