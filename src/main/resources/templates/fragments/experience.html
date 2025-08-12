@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="experience-section">
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-title-container">
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">
+          My professional journey and educational background
+        </p>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-date">Oct 2023 – Present</div>
+            <h3 class="timeline-title">Software Engineer</h3>
+            <h4 class="timeline-subtitle">Coforge, Greater Noida</h4>
+            <p class="timeline-description">
+              • Collaborated with the team to develop REST APIs and implement business features for seamless functionality.<br>
+              • Modernized application security by migrating from OAM to Azure AD, implementing OAuth 2.0 token-based authentication, Azure Vault integration, and upgrading Java clients to Java 17 and Spring Boot 3.x.<br>
+              • Decommissioned legacy systems including CIF Kafka topics, PHP endpoints, and preference registry logic, streamlining application architecture and reducing technical debt.<br>
+              • Enhanced infrastructure observability and reliability by applying TCServer JVM alerting improvements, enforcing container resource constraints in OpenShift, and driving production readiness checks.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-date">Apr 2023 – Sept 2023</div>
+            <h3 class="timeline-title">Graduate Engineer Trainee</h3>
+            <h4 class="timeline-subtitle">Coforge, Greater Noida</h4>
+            <p class="timeline-description">
+              • Completed a 54-day intensive Java Full Stack training program covering Java, Spring Boot, REST APIs, Angular, and SQL with hands-on project work and assessments.<br>
+              • Worked on modernizing legacy content management systems by supporting the migration of static content from Teamsite to in-app solutions, enhancing maintainability and deployment efficiency.<br>
+              • Contributed to backend logic updates in enterprise integration systems by implementing filtering mechanisms to support accurate data flow during business contract migration.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fa-brands fa-google"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-date">May 2024 – Aug 2024</div>
+            <h3 class="timeline-title">Google Summer of Code Developer</h3>
+            <h4 class="timeline-subtitle">Robolectric (Remote)</h4>
+            <p class="timeline-description">
+              • Enhanced Robolectric’s Activity context handling to simulate real Android behavior, improving the reliability of unit tests in JVM environments.<br>
+              • Refactored Activity creation logic and 65+ system service shadows to maintain static state consistency across all Contexts.<br>
+              • Designed and executed comprehensive unit and integration tests to ensure correctness across 14 Android API levels (Lollipop to Android U).<br>
+              • Collaborated with mentors and the open-source community to contribute multiple merged PRs and design implementation plans for high-impact Robolectric enhancements.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</th:block>
+</html>
